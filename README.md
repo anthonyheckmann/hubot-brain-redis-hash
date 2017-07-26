@@ -7,7 +7,8 @@ Hubot brain that uses hset and hget instead of storing everything as one giant b
 
 ## Getting Started
 1. Install the module: `npm install --save hubot-brain-redis-hash`
-2. Add it `hubot-brain-redis-hash` to your external-scripts.json file in your hubot directory
+2. Add `hubot-brain-redis-hash` to the first entry of your external-scripts.json file in your hubot directory
+This may be necessary as it temporarily unloads redis brain, an other external scripts may not load or save the necessary data.
 3. Profit
 
 ## Configuration (optional)
